@@ -1,0 +1,10 @@
+{
+  "name": "Devcontainer",
+
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "initializeCommand": ".devcontainer/initialize-command.sh",
+  "postCreateCommand": ".devcontainer/post-create-command.sh",
+
+  "runArgs": ["--env-file", ".devcontainer/.env"]
+}
