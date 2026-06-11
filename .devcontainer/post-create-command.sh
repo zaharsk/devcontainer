@@ -17,4 +17,9 @@ git config --global user.email "${GIT_USER_EMAIL}"
 git config --global pull.rebase true
 git config --global merge.ff only
 
+for script in /features-scripts/*.sh; do
+    [ -f "$script" ] || continue
+    bash "$script"
+done
+
 ### === ### === ### === ### === ### === ### === ### === ### === ### === ### === ###
