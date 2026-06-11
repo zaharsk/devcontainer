@@ -17,9 +17,13 @@ git config --global user.email "${GIT_USER_EMAIL}"
 git config --global pull.rebase true
 git config --global merge.ff only
 
-for script in /features-scripts/*.sh; do
-    [ -f "$script" ] || continue
-    bash "$script"
-done
+if [ -n "${FEATURES_SCRIPTS_FOLDER:-}" ]; then
+    shopt -s nullglob
+    
+    for script in "$HOME/$FEATURES_SCRIPTS_FOLDER"/*.sh; do
+        echo "script=$script"
+        bash "$script"
+    done
+fi
 
 ### === ### === ### === ### === ### === ### === ### === ### === ### === ### === ###
