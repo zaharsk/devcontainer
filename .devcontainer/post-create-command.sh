@@ -14,6 +14,7 @@ git config --global user.email "${GIT_USER_EMAIL}"
 # git config --global core.autocrlf input
 # git config --global core.symlinks true
 
-# git config --global pull.rebase true
+git config --global pull.rebase true
+git config --global merge.ff only
 
 ### === ### === ### === ### === ### === ### === ### === ### === ### === ### === ###
