@@ -6,5 +6,24 @@
   "initializeCommand": ".devcontainer/initialize-command.sh",
   "postCreateCommand": ".devcontainer/post-create-command.sh",
 
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "chat.disableAIFeatures": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "git.alwaysSignOff": true
+        // --- --- --- //
+      },
+
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "irongeek.vscode-env",
+        "barnim.markdown-code-copy-button"
+        // --- --- --- //
+      ]
+    }
+  },
+
   "runArgs": ["--env-file", ".devcontainer/.env"]
 }
