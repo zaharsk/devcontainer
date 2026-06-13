@@ -10,16 +10,46 @@
     "vscode": {
       "settings": {
         "chat.disableAIFeatures": true,
+        "telemetry.telemetryLevel": "off",
+        "workbench.startupEditor": "none",
+
+        "git.alwaysSignOff": true,
+        "git.autofetch": true,
+
+        "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+        "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+
+        "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+        "terminal.integrated.initialHint": false,
+
+        "editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+        "editor.fontSize": 12,
+        "editor.fontLigatures": true,
+
         "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
-        "git.alwaysSignOff": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+        "shellformat.path": "shfmt",
+        "[shellscript]": {
+          "editor.defaultFormatter": "foxundermoon.shell-format"
+        },
+        "[toml]": {
+          "editor.defaultFormatter": "tamasfe.even-better-toml"
+        },
+        "[yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
         // --- --- --- //
       },
 
       "extensions": [
+        "barnim.markdown-code-copy-button",
         "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
         "irongeek.vscode-env",
-        "barnim.markdown-code-copy-button"
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml"
         // --- --- --- //
       ]
     }
